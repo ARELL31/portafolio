@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Luis Fernando Franco Arellano</title>
+    
+    <!-- Script de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Define el color azul oscuro personalizado de tu LaTeX */
+        .text-darkblue {
+            color: #003366;
+        }
+        .border-darkblue {
+            border-color: #003366;
+        }
+        .bg-darkblue {
+            background-color: #003366;
+        }
+        .hover\:bg-darkblue-hover:hover {
+            background-color: #002244; /* Un tono más oscuro para el hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Navegación -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center h-16">
+                <div class="flex space-x-4 sm:space-x-8">
+                    <a href="#resumen" class="text-gray-600 hover:text-darkblue px-3 py-2 rounded-md text-sm font-medium transition-colors">Resumen</a>
+                    <a href="#experiencia" class="text-gray-600 hover:text-darkblue px-3 py-2 rounded-md text-sm font-medium transition-colors">Experiencia</a>
+                    <a href="#proyectos" class="text-gray-600 hover:text-darkblue px-3 py-2 rounded-md text-sm font-medium transition-colors">Proyectos</a>
+                    <a href="#habilidades" class="text-gray-600 hover:text-darkblue px-3 py-2 rounded-md text-sm font-medium transition-colors">Habilidades</a>
+                    <a href="#educacion" class="text-gray-600 hover:text-darkblue px-3 py-2 rounded-md text-sm font-medium transition-colors">Educación</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-5xl mx-auto p-4 sm:p-8">
+
+        <!-- Sección de Encabezado (Hero) -->
+        <header class="mb-12">
+            <div class="flex flex-col-reverse sm:flex-row justify-between items-center">
+                <!-- Información Principal -->
+                <div class="mt-6 sm:mt-0 text-center sm:text-left">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-darkblue">
+                        Luis Fernando Franco Arellano
+                    </h1>
+                    <p class="mt-2 text-xl md:text-2xl font-medium text-gray-700">
+                        Estudiante de Ingeniería en Computación
+                    </p>
+                    <p class="mt-2 text-gray-500 flex items-center justify-center sm:justify-start">
+                        <!-- Icono de Ubicación -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Mexico City, CDMX
+                    </p>
+                </div>
+                
+                <!-- Contacto -->
+                <div class="space-y-3">
+                    <a href="mailto:ferarellano654@gmail.com" class="flex items-center text-gray-600 hover:text-darkblue transition-colors">
+                        <!-- Icono de Email -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        ferarellano654@gmail.com
+                    </a>
+                    <a href="tel:+525655276733" class="flex items-center text-gray-600 hover:text-darkblue transition-colors">
+                        <!-- Icono de Teléfono -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        +52 56 5527 6733
+                    </a>
+                    <a href="https://github.com/ARELL31" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-600 hover:text-darkblue transition-colors">
+                        <!-- Icono de GitHub -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        ARELL31
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección de Resumen -->
+        <section id="resumen" class="mb-12">
+            <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Resumen Profesional</h2>
+            <p class="text-lg text-gray-700">
+                Estudiante de Ingeniería en Computación con fuerte motivación para aprender, crecer y contribuir en equipos de desarrollo de software. Experiencia en proyectos reales con interés en el desarrollo backend y frontend, y en la mejora continua de habilidades técnicas y colaborativas.
+            </p>
+        </section>
+
+        <!-- Sección de Experiencia Laboral -->
+        <section id="experiencia" class="mb-12">
+            <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Experiencia Laboral</h2>
+            <div class="relative pl-6 after:absolute after:top-2 after:bottom-0 after:left-0 after:w-0.5 after:bg-gray-300">
+                
+                <!-- Experiencia 1 -->
+                <div class="relative mb-8">
+                    <div class="absolute -left-[30px] top-2 h-4 w-4 rounded-full bg-darkblue border-4 border-white"></div>
+                    <h3 class="text-xl font-semibold text-gray-900">Full Stack Web Developer (Equipo de 3)</h3>
+                    <p class="text-md font-medium text-gray-600">Quality and Service in Pest, Mexico City</p>
+                    <p class="text-sm text-gray-500 mb-3">Jun 2025 – Ago 2025</p>
+                    <ul class="list-disc list-outside pl-5 space-y-1 text-gray-700">
+                        <li>Migración de plataforma PHP a Django 5, mejorando escalabilidad y mantenibilidad.</li>
+                        <li>Diseño y gestión de bases de datos MySQL con relaciones complejas y consultas optimizadas.</li>
+                        <li>Automatización de generación de reportes PDF con gráficos y envío automático por correo.</li>
+                        <li>Bibliotecas usadas: WeasyPrint, PyPDF2, reportlab, Pillow, matplotlib, seaborn, pandas, numpy, requests.</li>
+                        <li>Implementación de manejo seguro de variables de entorno y gestión de fechas con python-dotenv y python-dateutil.</li>
+                    </ul>
+                </div>
+
+                <!-- Experiencia 2 -->
+                <div class="relative mb-8">
+                    <div class="absolute -left-[30px] top-2 h-4 w-4 rounded-full bg-darkblue border-4 border-white"></div>
+                    <h3 class="text-xl font-semibold text-gray-900">Web Developer</h3>
+                    <p class="text-md font-medium text-gray-600">Multimedia and Internet Laboratory, Mexico City</p>
+                    <p class="text-sm text-gray-500 mb-3">Ene 2024 – Jun 2025</p>
+                    <ul class="list-disc list-outside pl-5 space-y-1 text-gray-700">
+                        <li>Diseño y mantenimiento de bases de datos relacionales.</li>
+                        <li>Desarrollo backend en Python y frontend web.</li>
+                        <li>Control de versiones con Git en proyectos colaborativos.</li>
+                        <li>Configuración y administración de servidores Linux, despliegue con Nginx y gestión básica de DNS.</li>
+                        <li>Impartición de cursos introductorios de Python, Java y Docker.</li>
+                        <li>Miembro del equipo MULTIMEDIA, ganador del Primer Lugar en LiverHACK 2025.</li>
+                    </ul>
+                </div>
+
+                <!-- Experiencia 3 -->
+                <div class="relative mb-8">
+                    <div class="absolute -left-[30px] top-2 h-4 w-4 rounded-full bg-darkblue border-4 border-white"></div>
+                    <h3 class="text-xl font-semibold text-gray-900">Monitor</h3>
+                    <p class="text-md font-medium text-gray-600">PILARES CDMX, Mexico City</p>
+                    <p class="text-sm text-gray-500 mb-3">Ene 2023 – Mar 2023</p>
+                    <ul class="list-disc list-outside pl-5 space-y-1 text-gray-700">
+                        <li>Registro de nuevo personal y usuarios.</li>
+                        <li>Modificación y corrección de datos en bases de datos.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="mb-12">
+            <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Proyecto 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">DataBenders</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Repositorio de GitHub (Colaborador)</p>
+                        <a href="https://github.com/MirioSH/DataBenders" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-white bg-darkblue hover:bg-darkblue-hover px-4 py-2 rounded-md transition-colors">
+                            Ver en GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ongaku</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Repositorio de GitHub (Propietario)</p>
+                        <a href="https://github.com/ARELL31/Ongaku" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-white bg-darkblue hover:bg-darkblue-hover px-4 py-2 rounded-md transition-colors">
+                            Ver en GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Histocom</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Repositorio de GitHub (Propietario)</p>
+                        <a href="https://github.com/ARELL31/Histocom" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-white bg-darkblue hover:bg-darkblue-hover px-4 py-2 rounded-md transition-colors">
+                            Ver en GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades" class="mb-12">
+            <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Habilidades Técnicas</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Lenguajes y Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Django</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">CSS</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">C</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">C++</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Bootstrap</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Oracle</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bases de Datos</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Herramientas</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Linux/Ubuntu</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Nginx</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Selenium</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Microsoft Office</span>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Análisis de Datos</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">pandas</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">numpy</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">matplotlib</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">seaborn</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Idiomas</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Español (Nativo)</span>
+                        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Inglés (A2/B1)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Educación y Certificaciones (Combinadas) -->
+        <section id="educacion" class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Educación -->
+                <div>
+                    <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Educación</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Technical Program in Programming and Telematics</h3>
+                            <p class="text-md text-gray-600">Escuela de Código, Mexico City</p>
+                            <p class="text-sm text-gray-500">Ene 2023 – Ago 2024</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">Bachelor’s Degree in Computer Engineering</h3>
+                            <p class="text-md text-gray-600">UNAM, Mexico City</p>
+                            <p class="text-sm text-gray-500">Ago 2019 – Presente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificaciones -->
+                <div>
+                    <h2 class="text-3xl font-bold text-darkblue border-b-2 border-darkblue pb-2 mb-6">Certificaciones</h2>
+                    <ul class="list-disc list-outside pl-5 space-y-2 text-gray-700">
+                        <li>
+                            Nginx from Zero to Expert (Udemy) - 
+                            <a href="https://www.udemy.com/certificate/UC-98c1bab9-0482-4fa7-a370-a06754181219/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                                Certificado
+                            </a>
+                        </li>
+                        <li>Scrum Fundamentals Certified (SFC™) – Sept 2024</li>
+                        <li>Java Programming Competency (60-hour course) – May 2024</li>
+                        <li>Databases (30-hour course) – Febrero 2024</li>
+                        <li>Web Development (40-hour course) – Enero 2024</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white mt-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <p class="text-gray-700 font-semibold">Luis Fernando Franco Arellano</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="mailto:ferarellano654@gmail.com" class="text-gray-500 hover:text-darkblue transition-colors">
+                    Email
+                </a>
+                <a href="https://github.com/ARELL31" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-darkblue transition-colors">
+                    GitHub
+                </a>
+                <a href="tel:+525655276733" class="text-gray-500 hover:text-darkblue transition-colors">
+                    Teléfono
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-gray-400">&copy; 2025 Creado con Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
